@@ -1,6 +1,8 @@
 import { NextRequest } from "next/server";
 import { convertUrlToMarkdown } from "@/lib/markdown";
 
+export const runtime = "nodejs";
+
 export async function POST(request: NextRequest) {
   try {
     const { url } = await request.json();
